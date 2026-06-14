@@ -1,0 +1,31 @@
+# Movie Recap Web App — Python Requirements
+# pip install -r requirements.txt
+
+# Audio Processing
+spleeter==2.4.0
+demucs==4.0.1
+torch>=2.0.0
+torchaudio>=2.0.0
+ffmpeg-python==0.2.0
+
+# Transcription
+openai-whisper==20231117
+
+# Summarization & Translation
+openai>=1.0.0
+
+# Voice-over Generation
+elevenlabs>=1.0.0
+pydub==0.25.1
+
+# Video Assembly
+moviepy>=2.0.0
+Pillow>=10.0.0
+numpy>=1.24.0
+imageio>=2.31.0
+imageio-ffmpeg>=0.4.9
+
+# Utilities
+python-dotenv==1.0.0
+tqdm>=4.65.0
+requests>=2.31.0

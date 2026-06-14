@@ -1,0 +1,40 @@
+{
+  "name": "movie-recap-web",
+  "version": "1.0.0",
+  "description": "Movie Recap Web App - Convert movies to Burmese recap videos",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"pnpm dev:server\" \"pnpm dev:client\"",
+    "dev:server": "tsx watch src/server.ts",
+    "dev:client": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node dist/server.js",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "multer": "^1.4.5-lts.1",
+    "dotenv": "^16.3.1",
+    "axios": "^1.6.0",
+    "uuid": "^9.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0",
+    "zustand": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "@types/express": "^4.17.20",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0",
+    "@vitejs/plugin-react": "^4.1.0",
+    "tsx": "^4.0.0",
+    "concurrently": "^8.2.0",
+    "vitest": "^0.34.0"
+  }
+}
